@@ -7,29 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
-  <title>テンプレート</title>
-  <meta name="description" content="<?php echo $des; ?>">
+  <title>山王保育園</title>
   <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
   <meta name="robots" content="none">
-  <meta property="og:type" content="website">
-  <meta property="og:title"
-    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
-  <meta property="og:description" content="<?php echo $des; ?>">
-  <meta property="og:site_name"
-    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
-  <meta property="og:locale" content="ja_JP">
-  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title"
-    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
-  <meta name="twitter:description" content="<?php echo $des; ?>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
   <link rel="stylesheet" href="assets/css/style.css?20230220">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -40,20 +21,19 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
-            src="assets/img/top/logo.png" alt="テンプレート"></a>
+            src="assets/img/top/logo.png" alt="山王保育園"></a>
       </h1>
       <nav class="header__menu-wrap header__item">
         <div class="header__menu-inner">
-          <a href="news.html" class="header__menu">お知らせ</a>
-          <a href="company.html" class="header__menu">会社概要</a>
-          <a href="about.html" class="header__menu">事業案内</a>
-          <a href="services.html" class="header__menu">サービス</a>
+          <a href="" class="header__menu">理念</a>
+          <a href="" class="header__menu">会社概要</a>
+          <a href="" class="header__menu">事業案内</a>
+          <a href="" class="header__menu">サービス</a>
+          <a href="" class="header__menu">お知らせ</a>
+          <a href="" class="header__menu">お知らせ</a>
         </div>
       </nav>
-      <div class="header__right-menu-wrap">
-        <a href="" class="header__right-menu-tel"><i class="fa-solid fa-phone"></i>012-345-6789</a>
-        <a href="contact.html" class="header__right-menu-contact">お問い合わせ</a>
-      </div>
+      <a href="" class="header__tel"><img src="assets/img/top/header-tel.png" alt=""></a>
       <div class="header__btn-wrap header__item open-btn-js" id="js-hamburger-menu">
         <img src="assets/img/top/hun-btn.png" alt="">
       </div>
@@ -77,17 +57,58 @@
 
   <div class="main page-top">
 
-    <section class="main-visual">
-      <div class="main-visual__img main-visual-js">
-        <img src="assets/img/top/main-visual.png" alt="">
-        <img src="assets/img/top/main-visual02.jpg" alt="">
-        <img src="assets/img/top/main-visual03.jpg" alt="">
-      </div>
-      <div class="main-visual__lead-wrap">
-        <h2 class="top-ttl-style fade-in-onload">OUR VISION<span>企業コンセプト</span></h2>
-        <p class="main-visual__lead fade-in-onload02">家族の笑顔と明日のために<br>自然と調和し心安らぐ暮らしを</p>
+
+
+
+
+
+
+
+    <div class="message">
+      <section class="message__item">
+        <div class="message__inner">
+          <h2  class="message__ttl">子ども一人ひとりの<br>育ちを支えます</h2>
+          <p>
+            子ども一人ひとりの育ちに配慮し、<br>子どもの状況や発達過程を踏まえ、<br>
+            保育所における環境を通して<br>養護と教育を一体的に行う。
+          </p>
+        </div>
+      </section>
+      <section class="message__item">
+        <div class="message__inner">
+          <h2  class="message__ttl message__ttl--02">保護者の子育てを<br>
+            支えます
+          
+          </h2>
+          <p>
+            保護者が安心して子どもを預けられるように、<br class="pc-block">子どもと保護者の安定した関係に配慮し、<br class="pc-block">保育所の特性や専門性を生かし支援していく。
+          </p>
+        </div>
+      </section>
+      <section class="message__item">
+        <div class="message__inner">
+          <h2  class="message__ttl message__ttl--03">子どもと子育てに<br>
+            やさしい地域社会を<br>
+            つくります</h2>
+          <p>
+            園のおかれている地域の環境を十分に踏まえ、<br class="pc-block">地域で子どもを育てる環境づくりに努めます。
+          </p>
+        </div>
+      </section>
+    </div>
+
+
+
+    <section class="circle-message">
+      <div class="circle">
+        <h2>子ども一人ひとりの<br>育ちを支えます</h2>
+        <p>
+          子ども一人ひとりの育ちに配慮し、子どもの状況や発達過程を踏まえ、<br>
+          保育所における環境を通して、養護と教育を一体的に行う。
+        </p>
       </div>
     </section>
+
 
     <section class="top-info section-bg">
       <div class="top-info__inner">
