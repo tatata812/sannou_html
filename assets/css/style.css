@@ -677,7 +677,7 @@ header
   top: 0;
   width: 100%;
   transition: transform 0.3s;
-  background-color: #E4FDFC;
+  background-color: #fff;
 }
 .header__inner {
   display: flex;
@@ -700,8 +700,7 @@ header
   }
 }
 .header__ttl-wrap {
-  max-width: 200px;
-  margin-right: auto;
+  max-width: 180px;
 }
 @media (max-width: 1120px) {
   .header__ttl-wrap {
@@ -810,20 +809,60 @@ header
 /* =================================
 メインビジュアル
  ================================= */
-.message {
+.main-visual {
+  padding: 40px 0;
+  background: linear-gradient(#fff 25%, #E4FDFC 25%);
+}
+.main-visual__content {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.main-visual__left {
+  flex: 1;
+}
+.main-visual__left-inner {
+  max-width: 200px;
+  margin: 40px 0 40px auto;
+}
+.main-visual__text {
+  font-size: 28px;
+  color: #603813;
+  font-weight: 500;
+  margin: 0 0 40px;
+  font-weight: 700;
+}
+.main-visual__right {
+  width: 70%;
+}
+.main-visual__video {
+  width: 100%;
+  border-radius: 30px 0 0 30px;
+}
+/* =================================
+メーッセージ
+ ================================= */
+.top-message {
+  overflow: hidden;
+}
+.top-message__ttl {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+.top-message__content {
   display: flex;
   justify-content: center;
   margin-right: -90px;
 }
 @media (max-width: 1120px) {
-  .message {
+  .top-message__content {
     flex-direction: column;
     margin: 0;
     align-items: center;
     gap: 24px;
   }
 }
-.message__item {
+.top-message__item {
   background: url("../img/top/kumo.png") no-repeat center center;
   background-size: contain;
   padding: 70px;
@@ -831,21 +870,21 @@ header
   margin-left: -90px;
 }
 @media (max-width: 1120px) {
-  .message__item {
+  .top-message__item {
     margin: 0;
   }
 }
 @media (max-width: 600px) {
-  .message__item {
+  .top-message__item {
     width: 350px;
     padding: 70px;
   }
 }
-.message__inner {
+.top-message__inner {
   text-align: center;
   /* 中央寄せ */
 }
-.message__ttl {
+.top-message__ttl {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.6;
@@ -853,11 +892,11 @@ header
   position: relative;
 }
 @media (max-width: 1120px) {
-  .message__ttl {
+  .top-message__ttl {
     font-size: 18px;
   }
 }
-.message__ttl::before {
+.top-message__ttl::before {
   content: url(../img/top/message-flag01.png);
   position: absolute;
   top: -123px;
@@ -865,18 +904,18 @@ header
   transform: scale(0.4);
 }
 @media (max-width: 600px) {
-  .message__ttl::before {
+  .top-message__ttl::before {
     top: -126px;
     left: -47px;
   }
 }
-.message__ttl--02::before {
+.top-message__ttl--02::before {
   content: url(../img/top/message-flag02.png);
 }
-.message__ttl--03::before {
+.top-message__ttl--03::before {
   content: url(../img/top/message-flag03.png);
 }
-.message p {
+.top-message p {
   font-size: 13px;
   line-height: 1.8;
   color: #333;

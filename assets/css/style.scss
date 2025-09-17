@@ -32,7 +32,7 @@ header
   top: 0;
   width: 100%;
   transition: transform 0.3s;
-  background-color: #E4FDFC;
+  background-color: #fff;
 
 
   &__inner {
@@ -55,8 +55,7 @@ header
   }
 
   &__ttl-wrap {
-    max-width: 200px;
-    margin-right: auto;
+    max-width: 180px;
 
     @include pc {
       max-width: 140px;
@@ -179,17 +178,89 @@ header
 /* =================================
 メインビジュアル
  ================================= */
-.message {
-  display: flex;
-  justify-content: center;
-      margin-right: -90px;
+.main-visual {
+  padding: 40px 0;
+  background: linear-gradient(#fff 25%, #E4FDFC 25%);
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  &__left {
+    flex: 1;
+  }
+
+  &__left-inner {
+    max-width: 200px;
+    margin: 40px 0 40px auto;
+
+  }
+
+  &__text {
+    font-size: 28px;
+    color: #603813;
+    font-weight: 500;
+    margin: 0 0 40px;
+    font-weight: 700;
+  }
+
+  &__right {
+    width: 70%;
+  }
+
+  &__video {
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+}
 
 
-  @include pc{
-  flex-direction: column;
-  margin: 0;
-  align-items: center;
-  gap: 24px;
+
+
+
+
+
+/* =================================
+メーッセージ
+ ================================= */
+
+.top-message {
+  overflow: hidden;
+
+  &__ttl {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+  }
+
+
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    margin-right: -90px;
+
+
+
+    @include pc {
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+      gap: 24px;
+    }
   }
 
   &__item {
@@ -199,13 +270,13 @@ header
     width: 450px;
     margin-left: -90px;
 
-    @include pc{
-    margin: 0;
+    @include pc {
+      margin: 0;
     }
 
-    @include sp{
-        width: 350px;
-            padding: 70px;
+    @include sp {
+      width: 350px;
+      padding: 70px;
 
 
     }
@@ -224,8 +295,8 @@ header
     margin-bottom: 1rem;
     position: relative;
 
-    @include pc{
-    font-size: 18px;
+    @include pc {
+      font-size: 18px;
     }
 
     &::before {
@@ -235,9 +306,9 @@ header
       left: -26px;
       transform: scale(0.4);
 
-      @include sp{
-          top: -126px;
-    left: -47px;
+      @include sp {
+        top: -126px;
+        left: -47px;
       }
     }
 
@@ -247,7 +318,7 @@ header
       }
     }
 
-        &--03 {
+    &--03 {
       &::before {
         content: url(../img/top/message-flag03.png);
       }
