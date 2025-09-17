@@ -1148,7 +1148,7 @@ top-about
 @media (max-width: 820px) {
   .top-about {
     margin: -60px 0 0 0;
-    padding: 0 0 120px;
+    padding: 0 0 32px;
   }
 }
 .top-about__content {
@@ -1224,6 +1224,301 @@ top-about
 }
 /* =================================
 保育の特色
+ ================================= */
+.top-how {
+  padding: 0 0 120px;
+}
+@media (max-width: 820px) {
+  .top-how {
+    padding: 0 0 0;
+  }
+}
+.top-how__ttl-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.top-how__ttl {
+  text-align: center;
+  padding: 80px 0;
+  font-size: 28px;
+  color: #333;
+  background-image: url(../img/top/how-ttl-bg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 820px) {
+  .top-how__ttl {
+    font-size: 20px;
+  }
+}
+.top-how__content {
+  transform: translateY(-60px);
+}
+@media (max-width: 820px) {
+  .top-how__content {
+    transform: translateY(0);
+  }
+}
+.top-how__item-wrap {
+  max-width: 880px;
+  margin: 0 auto 60px;
+  display: flex;
+  gap: 60px;
+  padding: 0 18px;
+}
+@media (max-width: 820px) {
+  .top-how__item-wrap {
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 40px;
+  }
+}
+.top-how__item {
+  width: calc((100% - 120px) / 3);
+}
+@media (max-width: 820px) {
+  .top-how__item {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+.top-how__item--02 {
+  transform: translateY(60px);
+}
+@media (max-width: 820px) {
+  .top-how__item--02 {
+    transform: translateY(0);
+  }
+}
+.top-how__item--03 {
+  transform: translateY(120px);
+}
+@media (max-width: 820px) {
+  .top-how__item--03 {
+    transform: translateY(0);
+  }
+}
+.top-how__item-top {
+  min-height: 280px;
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 12px;
+  position: relative;
+}
+@media (max-width: 820px) {
+  .top-how__item-top {
+    min-height: 200px;
+  }
+}
+.top-how__item-top::before {
+  content: url(../img/top/how-item-num01.png);
+  position: absolute;
+  top: -54px;
+  left: -51px;
+  transform: scale(0.5);
+}
+@media (max-width: 820px) {
+  .top-how__item-top::before {
+    transform: scale(0.4);
+  }
+}
+.top-how__item-top--02::before {
+  content: url(../img/top/how-item-num02.png);
+}
+.top-how__item-top--03::before {
+  content: url(../img/top/how-item-num03.png);
+}
+.top-how__item-top--04::before {
+  content: url(../img/top/how-item-num04.png);
+}
+.top-how__item-top--05::before {
+  content: url(../img/top/how-item-num05.png);
+}
+.top-how__item-top--06::before {
+  content: url(../img/top/how-item-num06.png);
+}
+.top-how__item-img {
+  width: 70px;
+  margin: 0 auto 40px;
+}
+@media (max-width: 820px) {
+  .top-how__item-img {
+    width: 50px;
+    margin: 0 auto 24px;
+  }
+}
+.top-how__item-ttl {
+  font-size: 24px;
+  text-align: center;
+}
+@media (max-width: 820px) {
+  .top-how__item-ttl {
+    font-size: 20px;
+  }
+}
+.top-how__item-text {
+  padding: 0 2px;
+}
+/* =================================
+プラグラム
+ ================================= */
+.top-program__ttl-wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 120px;
+  margin: 0px 0 -53px;
+}
+@media (max-width: 820px) {
+  .top-program__ttl-wrap {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0 120px;
+  }
+}
+.top-program__ttl {
+  width: 70px;
+}
+@media (max-width: 820px) {
+  .top-program__ttl {
+    width: 38px;
+    height: 90px;
+  }
+}
+@media (max-width: 820px) {
+  .top-program__ttl img {
+    transform: rotate(-90deg);
+  }
+}
+.top-program__main-img {
+  width: 70%;
+}
+@media (max-width: 820px) {
+  .top-program__main-img {
+    width: 100%;
+    padding: 0 0 0 18px;
+  }
+}
+.top-program__flow-ttl-wrap {
+  background-image: url(../img/top/about-bg.png);
+  background-position: center -100px;
+  background-size: cover;
+  padding: 60px 0 60px 0;
+  background-repeat: no-repeat;
+}
+@media (max-width: 820px) {
+  .top-program__flow-ttl-wrap {
+    margin: -60px 0 0 0;
+    padding: 60px 0 60px 0;
+  }
+}
+.top-program__flow-ttl-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.top-program__flow-ttl {
+  max-width: 300px;
+}
+@media (max-width: 820px) {
+  .top-program__flow-ttl {
+    max-width: 200px;
+  }
+}
+.top-program__flow-content {
+  background-color: #fff;
+  max-width: 840px;
+  margin: -140px auto 120px;
+  padding: 40px;
+  z-index: 10;
+  position: relative;
+}
+@media (max-width: 820px) {
+  .top-program__flow-content {
+    margin: -120px auto 60px;
+    padding: 12px;
+  }
+}
+.top-program__schedule {
+  background-color: #fff;
+  max-width: 840px;
+  margin: 0 auto 60px;
+  padding: 4px 0 40px;
+}
+.top-program__schedule img {
+  margin: -10px 0 0;
+}
+.top-program__text {
+  max-width: 840px;
+  margin: 0 auto 120px;
+  padding: 0 12px;
+}
+.top-program__text span {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+@media (max-width: 820px) {
+  .top-program__text {
+    margin: 0 auto 60px;
+  }
+}
+.top-program__class {
+  background-color: #fff;
+  max-width: 840px;
+  margin: 0 auto 60px;
+  padding: 4px 40px 40px;
+}
+.top-program__class img {
+  margin: -24px 0 0;
+}
+@media (max-width: 820px) {
+  .top-program__class {
+    padding: 4px 12px 40px;
+  }
+  .top-program__class img {
+    margin: -12px 0 0;
+  }
+}
+/* =================================
+reasons
+ ================================= */
+.top-reasons__inner {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+@media (max-width: 820px) {
+  .top-reasons__inner {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0 120px;
+  }
+}
+.top-reasons__ttl {
+  width: 70px;
+}
+@media (max-width: 820px) {
+  .top-reasons__ttl {
+    width: 38px;
+    height: 90px;
+  }
+}
+@media (max-width: 820px) {
+  .top-reasons__ttl img {
+    transform: rotate(-90deg);
+  }
+}
+.top-reasons__right {
+  width: 85%;
+}
+/* =================================
+
  ================================= */
 /* =================================
 
