@@ -833,21 +833,37 @@ header
   font-weight: 700;
 }
 .main-visual__right {
-  width: 70%;
+  width: 65%;
 }
 .main-visual__video {
   width: 100%;
   border-radius: 30px 0 0 30px;
 }
 /* =================================
+リード
+ ================================= */
+.top-lead {
+  padding: 80px 0;
+}
+/* =================================
 メーッセージ
  ================================= */
 .top-message {
   overflow: hidden;
+  padding: 80px 12px;
 }
 .top-message__ttl {
   max-width: 1000px;
   margin: 0 auto 40px;
+  font-size: 28px;
+  color: #333;
+}
+@media (max-width: 820px) {
+  .top-message__ttl {
+    text-align: center;
+    margin: 0 auto 24px;
+    font-size: 22px;
+  }
 }
 .top-message__content {
   display: flex;
@@ -884,7 +900,7 @@ header
   text-align: center;
   /* 中央寄せ */
 }
-.top-message__ttl {
+.top-message__item-ttl {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.6;
@@ -892,11 +908,11 @@ header
   position: relative;
 }
 @media (max-width: 1120px) {
-  .top-message__ttl {
+  .top-message__item-ttl {
     font-size: 18px;
   }
 }
-.top-message__ttl::before {
+.top-message__item-ttl::before {
   content: url(../img/top/message-flag01.png);
   position: absolute;
   top: -123px;
@@ -904,15 +920,15 @@ header
   transform: scale(0.4);
 }
 @media (max-width: 600px) {
-  .top-message__ttl::before {
+  .top-message__item-ttl::before {
     top: -126px;
     left: -47px;
   }
 }
-.top-message__ttl--02::before {
+.top-message__item-ttl--02::before {
   content: url(../img/top/message-flag02.png);
 }
-.top-message__ttl--03::before {
+.top-message__item-ttl--03::before {
   content: url(../img/top/message-flag03.png);
 }
 .top-message p {
@@ -921,82 +937,298 @@ header
   color: #333;
 }
 
-.circle-message {
-  display: flex;
-  justify-content: center;
-  /* 真ん中に配置 */
-  margin: 2rem 0;
+/* =================================
+philosophy
+ ================================= */
+.top-philosophy__ttl-wrap {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
 }
-
-.circle {
-  width: 400px;
-  /* 丸の大きさ */
-  height: 400px;
-  border-radius: 50%;
-  /* 丸くする */
-  background: #fce4ec;
-  /* 背景色（ピンクなど） */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* 縦中央揃え */
-  align-items: center;
-  /* 横中央揃え */
-  padding: 2rem;
-  text-align: center;
+@media (max-width: 820px) {
+  .top-philosophy__ttl-wrap {
+    margin: 0 auto 24px;
+  }
 }
-
-.circle h2 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.top-philosophy__ttl {
+  max-width: 480px;
+  margin: 0 0 40px auto;
 }
-
-.circle p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #333;
+@media (max-width: 820px) {
+  .top-philosophy__ttl {
+    margin: 0 auto 24px;
+  }
 }
-
-.main-visual__img {
-  aspect-ratio: 7/2;
+.top-philosophy__ttl-lead {
+  text-align: right;
+  color: #603813;
+  font-size: 13px;
+  margin-right: 16px;
+}
+@media (max-width: 820px) {
+  .top-philosophy__ttl-lead {
+    text-align: center;
+  }
+}
+.top-philosophy__main-img {
   width: 100%;
   position: relative;
-  overflow: hidden;
+  display: inline-block;
+  margin: 0 0 60px;
 }
-.main-visual__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  /* 枠いっぱいにトリミング */
+.top-philosophy__main-img:after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-}
-.main-visual__lead-wrap {
-  max-width: 1120px;
-  margin: 80px auto;
-  padding: 0 12px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 192, 203, 0.4);
+  /* 薄ピンク */
+  pointer-events: none;
+  /* クリック操作を透過 */
 }
 @media (max-width: 820px) {
-  .main-visual__lead-wrap {
-    margin: 40px auto;
+  .top-philosophy__main-img {
+    margin: 0 0 24px;
   }
 }
-.main-visual__lead {
-  text-align: center;
-  font-size: 44px;
-  margin: 40px 0 0;
-  line-height: 1.4;
-  font-weight: bold;
+.top-philosophy__main-lead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #333;
+  z-index: 10;
+  font-weight: 700;
+  text-shadow: 2px 3px 3px rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.5rem;
+  white-space: nowrap;
 }
 @media (max-width: 820px) {
-  .main-visual__lead {
-    font-size: 24px;
+  .top-philosophy__main-lead {
+    font-size: 20px;
+  }
+}
+.top-philosophy__line {
+  margin: 0 0 80px;
+}
+@media (max-width: 820px) {
+  .top-philosophy__line {
+    margin: 0 0 24px;
+  }
+}
+.top-philosophy__sub-ttl {
+  max-width: 400px;
+  margin: 0 auto 80px;
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+}
+.top-philosophy__sub-ttl:before {
+  content: url(../img/top/philosophy-subttl-img.png);
+  position: absolute;
+  top: -77px;
+  right: -40px;
+  transform: scale(0.4);
+}
+@media (max-width: 820px) {
+  .top-philosophy__sub-ttl {
+    font-size: 22px;
+    margin: 0 auto 40px;
+  }
+  .top-philosophy__sub-ttl:before {
+    top: -77px;
+    right: -20px;
+    transform: scale(0.23);
+  }
+}
+.circle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 12px;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 0 auto;
+}
+@media (max-width: 820px) {
+  .circle {
+    gap: 18px;
+  }
+}
+.circle__item {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  /* 丸くする */
+  background: #fff;
+  display: flex;
+  align-items: center;
+  /* 縦中央 */
+  justify-content: center;
+  /* 横中央 */
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+@media (max-width: 820px) {
+  .circle__item {
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+  }
+}
+.circle__item::before {
+  content: url(../img/top/philosophy-item01.png);
+  position: absolute;
+  top: -7px;
+  left: -14px;
+  transform: scale(0.4);
+}
+@media (max-width: 600px) {
+  .circle__item::before {
+    top: -7px;
+    left: -14px;
+  }
+}
+.circle__item--02::before {
+  content: url(../img/top/philosophy-item02.png);
+  top: 5px;
+  left: -14px;
+  transform: scale(0.42);
+}
+@media (max-width: 600px) {
+  .circle__item--02::before {
+    top: 10px;
+    left: -34px;
+  }
+}
+.circle__item--03::before {
+  content: url(../img/top/philosophy-item03.png);
+  top: 28px;
+  left: 2px;
+  transform: scale(0.53);
+}
+.circle__item--04::before {
+  content: url(../img/top/philosophy-item04.png);
+  top: 28px;
+  left: -5px;
+  transform: scale(0.5);
+}
+.circle__item--05::before {
+  content: url(../img/top/philosophy-item05.png);
+  top: 24px;
+  left: -5px;
+  transform: scale(0.45);
+}
+@media (max-width: 600px) {
+  .circle__item--05::before {
+    top: 10px;
+    left: -14px;
   }
 }
 
+/* =================================
+top-about
+ ================================= */
+.top-about {
+  background-image: url(../img/top/about-bg.png);
+  background-position: center;
+  background-size: contain;
+  padding: 60px 0 120px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 820px) {
+  .top-about {
+    margin: -60px 0 0 0;
+    padding: 0 0 120px;
+  }
+}
+.top-about__content {
+  display: flex;
+}
+@media (max-width: 820px) {
+  .top-about__content {
+    flex-direction: column-reverse;
+    padding: 0 18px;
+  }
+}
+.top-about__img {
+  width: 60%;
+}
+@media (max-width: 820px) {
+  .top-about__img {
+    width: 100%;
+  }
+}
+.top-about__right {
+  display: flex;
+  margin: 50px 0 0 -120px;
+  gap: 100px;
+}
+@media (max-width: 820px) {
+  .top-about__right {
+    margin: 0 0 0 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+}
+.top-about__text-wrap {
+  width: 300px;
+}
+.top-about__text-ttl {
+  display: flex;
+  justify-content: center;
+  /* 横方向の中央寄せ */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  letter-spacing: 0.2em;
+}
+.top-about__text-ttl span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.top-about__text {
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+}
+.top-about__text p {
+  margin-bottom: 40px;
+  color: #603813;
+  line-height: 2rem;
+}
+.top-about__ttl-wrap {
+  width: 70px;
+}
+@media (max-width: 820px) {
+  .top-about__ttl-wrap {
+    width: 44px;
+    height: 198px;
+  }
+}
+@media (max-width: 820px) {
+  .top-about__ttl-wrap img {
+    transform: rotate(-90deg);
+  }
+}
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
 /* =================================
 お知らせ
  ================================= */

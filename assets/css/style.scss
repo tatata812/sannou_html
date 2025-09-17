@@ -207,7 +207,7 @@ header
   }
 
   &__right {
-    width: 70%;
+    width: 65%;
   }
 
   &__video {
@@ -229,6 +229,51 @@ header
 }
 
 
+/* =================================
+リード
+ ================================= */
+
+.top-lead {
+  padding: 80px 0;
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+
 
 
 
@@ -240,10 +285,21 @@ header
 
 .top-message {
   overflow: hidden;
+  padding: 80px 12px;
 
   &__ttl {
     max-width: 1000px;
     margin: 0 auto 40px;
+    font-size: 28px;
+    color: #333;
+
+    @include tab{
+    text-align: center;
+        margin: 0 auto 24px;
+        font-size: 22px;
+
+    }
+
   }
 
 
@@ -288,7 +344,7 @@ header
     /* 中央寄せ */
   }
 
-  &__ttl {
+  &__item-ttl {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.6;
@@ -335,85 +391,472 @@ header
 
 }
 
-.circle-message {
-  display: flex;
-  justify-content: center;
-  /* 真ん中に配置 */
-  margin: 2rem 0;
-}
-
-.circle {
-  width: 400px;
-  /* 丸の大きさ */
-  height: 400px;
-  border-radius: 50%;
-  /* 丸くする */
-  background: #fce4ec;
-  /* 背景色（ピンクなど） */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* 縦中央揃え */
-  align-items: center;
-  /* 横中央揃え */
-  padding: 2rem;
-  text-align: center;
-}
-
-.circle h2 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.circle p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #333;
-}
 
 
 
-.main-visual {
 
-  &__img {
-    aspect-ratio: 7 / 2;
+
+
+/* =================================
+philosophy
+ ================================= */
+
+.top-philosophy {
+
+  &__ttl-wrap {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+
+    @include tab {
+      margin: 0 auto 24px;
+    }
+  }
+
+  &__ttl {
+    max-width: 480px;
+    margin: 0 0 40px auto;
+
+    @include tab {
+      margin: 0 auto 24px;
+    }
+  }
+
+  &__ttl-lead {
+    text-align: right;
+    color: #603813;
+    font-size: 13px;
+    margin-right: 16px;
+
+    @include tab {
+      text-align: center;
+    }
+  }
+
+  &__main-img {
     width: 100%;
     position: relative;
-    overflow: hidden;
+    display: inline-block;
+    margin: 0 0 60px;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      /* 枠いっぱいにトリミング */
+    &:after {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 192, 203, 0.4);
+      /* 薄ピンク */
+      pointer-events: none;
+      /* クリック操作を透過 */
     }
-  }
-
-  &__lead-wrap {
-    max-width: 1120px;
-    margin: 80px auto;
-    padding: 0 12px;
 
     @include tab {
-      margin: 40px auto;
+      margin: 0 0 24px;
     }
   }
 
-  &__lead {
+  &__main-lead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: #333;
+    z-index: 10;
+    font-weight: 700;
+    text-shadow: 2px 3px 3px rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.5rem;
+    white-space: nowrap;
+
+
+    @include tab {
+      font-size: 20px;
+    }
+  }
+
+  &__line {
+    margin: 0 0 80px;
+
+    @include tab {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__sub-ttl {
+    max-width: 400px;
+    margin: 0 auto 80px;
     text-align: center;
-    font-size: 44px;
-    margin: 40px 0 0;
-    line-height: 1.4;
-    font-weight: bold;
+    font-size: 28px;
+    position: relative;
+
+    &:before {
+      content: url(../img/top/philosophy-subttl-img.png);
+      position: absolute;
+      top: -77px;
+      right: -40px;
+      transform: scale(0.4);
+    }
 
     @include tab {
-      font-size: 24px;
+      font-size: 22px;    
+      margin: 0 auto 40px;
+
+
+      &:before {
+        top: -77px;
+        right: -20px;
+        transform: scale(0.23);
+      }
     }
   }
+
+
+
+
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+.circle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 12px;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 0 auto;
+
+  @include tab {
+    gap: 18px;
+  }
+
+  &__item {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    /* 丸くする */
+    background: #fff;
+    display: flex;
+    align-items: center;
+    /* 縦中央 */
+    justify-content: center;
+    /* 横中央 */
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+
+    @include tab {
+      width: 250px;
+      height: 250px;
+      font-size: 20px;
+
+    }
+
+    &::before {
+      content: url(../img/top/philosophy-item01.png);
+      position: absolute;
+      top: -7px;
+      left: -14px;
+      transform: scale(0.4);
+
+      @include sp {
+        top: -7px;
+        left: -14px;
+      }
+    }
+
+    &--02 {
+      &::before {
+        content: url(../img/top/philosophy-item02.png);
+        top: 5px;
+        left: -14px;
+        transform: scale(0.42);
+
+        @include sp {
+          top: 10px;
+          left: -34px;
+        }
+
+      }
+    }
+
+    &--03 {
+      &::before {
+        content: url(../img/top/philosophy-item03.png);
+        top: 28px;
+        left: 2px;
+        transform: scale(0.53);
+      }
+    }
+
+    &--04 {
+      &::before {
+        content: url(../img/top/philosophy-item04.png);
+        top: 28px;
+        left: -5px;
+        transform: scale(0.5);
+      }
+    }
+
+    &--05 {
+      &::before {
+        content: url(../img/top/philosophy-item05.png);
+        top: 24px;
+        left: -5px;
+        transform: scale(0.45);
+
+        @include sp {
+          top: 10px;
+          left: -14px;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+
+/* =================================
+top-about
+ ================================= */
+
+.top-about {
+  background-image: url(../img/top/about-bg.png);
+  background-position: center;
+    background-size: contain;
+    padding: 60px 0 120px;
+    background-repeat: no-repeat;
+
+  @include tab{
+  margin: -60px 0 0 0;
+    padding: 0 0 120px;
+
+  }
+
+  &__content {
+    display: flex;
+
+    @include tab {
+      flex-direction: column-reverse;
+      padding: 0 18px;
+    }
+  }
+
+  &__img {
+
+    width: 60%;
+
+    @include tab {
+      width: 100%;
+    }
+
+  }
+
+  &__right {
+    display: flex;
+    margin: 50px 0 0 -120px;
+    gap: 100px;
+
+    @include tab {
+      margin: 0 0 0 0;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  &__text-wrap {
+    width: 300px;
+  }
+
+  &__text-ttl {
+
+    display: flex;
+    justify-content: center;
+    /* 横方向の中央寄せ */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    letter-spacing: 0.2em;
+
+    span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+
+    }
+  }
+
+  &__text {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+
+    p {
+      margin-bottom: 40px;
+      color: #603813;
+      line-height: 2rem;
+    }
+  }
+
+  &__ttl-wrap {
+    width: 70px;
+
+    @include tab{
+        width: 44px;
+        height: 198px;
+    }
+
+    img {
+    @include tab{
+     transform: rotate(-90deg);
+    }
+    }
+
+
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
 
 }
 
