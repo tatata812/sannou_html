@@ -193,7 +193,7 @@ header
   }
 
   &__left-inner {
-    max-width: 200px;
+    max-width: 270px;
     margin: 40px 0 40px auto;
 
   }
@@ -204,6 +204,8 @@ header
     font-weight: 500;
     margin: 0 0 40px;
     font-weight: 700;
+    letter-spacing: 0.3em;
+
   }
 
   &__right {
@@ -293,7 +295,7 @@ header
     font-size: 28px;
     color: #333;
 
-    @include tab {
+    @include pc {
       text-align: center;
       margin: 0 auto 24px;
       font-size: 22px;
@@ -350,6 +352,7 @@ header
     line-height: 1.6;
     margin-bottom: 1rem;
     position: relative;
+    color: #333;
 
     @include pc {
       font-size: 18px;
@@ -385,6 +388,9 @@ header
     font-size: 13px;
     line-height: 1.8;
     color: #333;
+    letter-spacing: 0.1em;
+
+
 
   }
 
@@ -414,7 +420,7 @@ philosophy
   }
 
   &__ttl {
-    max-width: 480px;
+    max-width: 520px;
     margin: 0 0 40px auto;
 
     @include tab {
@@ -426,7 +432,7 @@ philosophy
     text-align: right;
     color: #603813;
     font-size: 13px;
-    margin-right: 16px;
+    letter-spacing: 0.15em;
 
     @include tab {
       text-align: center;
@@ -490,12 +496,13 @@ philosophy
     text-align: center;
     font-size: 28px;
     position: relative;
+    color: #333;
 
     &:before {
       content: url(../img/top/philosophy-subttl-img.png);
       position: absolute;
       top: -77px;
-      right: -40px;
+      right: -54px;
       transform: scale(0.4);
     }
 
@@ -728,6 +735,7 @@ top-about
       margin-bottom: 40px;
       color: #603813;
       line-height: 2rem;
+      white-space: nowrap;
     }
   }
 
@@ -780,8 +788,8 @@ top-about
 .top-how {
   padding: 0 0 120px;
 
-  @include tab{
-  padding: 0 0 0;
+  @include tab {
+    padding: 0 0 0;
   }
 
   &__ttl-wrap {
@@ -959,17 +967,22 @@ top-about
  ================================= */
 
 .top-program {
+  padding: 0 0 80px;
+
+  @include tab {
+    padding: 0 0 40px;
+  }
 
   &__ttl-wrap {
     display: flex;
     justify-content: flex-end;
     gap: 120px;
-margin: 0px 0 -53px;
+    margin: 0px 0 -53px;
 
     @include tab {
       flex-direction: column;
       align-items: center;
-      margin: 0px 0 120px;
+      margin: -80px 0 60px;
 
     }
   }
@@ -993,70 +1006,70 @@ margin: 0px 0 -53px;
   }
 
   &__main-img {
-    width: 70%;
+    width: 80%;
 
-    @include tab{
-    width: 100%;
-    padding: 0 0 0 18px;
+    @include tab {
+      width: 100%;
+      padding: 0 0 0 18px;
     }
   }
 
   &__flow-ttl-wrap {
-      background-image: url(../img/top/about-bg.png);
-background-position: center -100px;
-   background-size: cover;
-  padding: 60px 0 60px 0;
-  background-repeat: no-repeat;
+    background-image: url(../img/top/about-bg.png);
+    background-position: center -100px;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+    background-repeat: no-repeat;
 
-  @include tab {
-    margin: -60px 0 0 0;
-  padding: 60px 0 60px 0;
+    @include tab {
+      margin: -60px 0 0 0;
+      padding: 60px 0 60px 0;
 
-  }
+    }
   }
 
   &__flow-ttl-inner {
-    max-width: 800px;
+    max-width: 880px;
     margin: 0 auto;
-padding: 0 16px;
+    padding: 0 16px;
   }
 
   &__flow-ttl {
     max-width: 300px;
 
-    @include tab{
-    max-width: 200px;
+    @include tab {
+      max-width: 200px;
     }
   }
 
   &__flow-content {
     background-color: #fff;
-    max-width: 840px;
+    max-width: 920px;
     margin: -140px auto 120px;
     padding: 40px;
     z-index: 10;
     position: relative;
 
-    @include tab{
-    margin: -120px auto 60px;
-    padding: 12px;
+    @include tab {
+      margin: -120px auto 60px;
+      padding: 12px;
     }
 
   }
 
   &__schedule {
     background-color: #fff;
-    max-width: 840px;
+    max-width: 920px;
     margin: 0 auto 60px;
     padding: 4px 0 40px;
 
-        img {
+    img {
       margin: -10px 0 0;
     }
   }
 
   &__text {
-    max-width: 840px;
+    max-width: 920px;
     margin: 0 auto 120px;
     padding: 0 12px;
 
@@ -1066,14 +1079,14 @@ padding: 0 16px;
       margin: 0 0 4px;
     }
 
-    @include tab{
-    margin: 0 auto 60px;
+    @include tab {
+      margin: 0 auto 60px;
     }
   }
 
-    &__class {
+  &__class {
     background-color: #fff;
-    max-width: 840px;
+    max-width: 920px;
     margin: 0 auto 60px;
     padding: 4px 40px 40px;
 
@@ -1081,12 +1094,12 @@ padding: 0 16px;
       margin: -24px 0 0;
     }
 
-    @include tab{
-        padding: 4px 12px 40px;
+    @include tab {
+      padding: 4px 12px 40px;
 
-    img {
-      margin: -12px 0 0;
-    }
+      img {
+        margin: -12px 0 0;
+      }
     }
   }
 
@@ -1118,23 +1131,26 @@ reasons
   &__inner {
     display: flex;
     gap: 40px;
-        justify-content: flex-end;
+    justify-content: flex-end;
 
-            @include tab {
+    @include tab {
       flex-direction: column;
       align-items: center;
-      margin: 0px 0 120px;
+      margin: -140px 0 40px;
 
     }
-
   }
 
   &__ttl {
-   width: 70px;
+    width: 70px;
+
+    @include pc {
+      width: 50px;
+    }
 
     @include tab {
-      width: 38px;
-      height: 90px;
+        width: 35px;
+        height: 160px;
     }
 
     img {
@@ -1145,24 +1161,147 @@ reasons
   }
 
   &__right {
-    width: 85%;
+    width: 80%;
+
+    @include pc {
+      width: 90%;
+    }
+
+    @include tab{
+    width: 100%;
+    }
+
   }
 
-  &__ {}
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 80px;
+    align-items: center;
 
-  &__ {}
+    @include tab {
+      flex-direction: column;
+      gap: 24px;
+      overflow: hidden;
+    }
+  }
 
-  &__ {}
+  &__text-wrap {}
 
-  &__ {}
+  &__sub-ttl {
+    max-width: 360px;
+    margin: 0 0 20px 24px;
 
-  &__ {}
+    @include tab {
+      margin: 0 auto 16px;
+          max-width: 300px;
 
-  &__ {}
+    }
+  }
 
-  &__ {}
+  &__lead {
+    background-color: #69e0dc;
+    max-width: 300px;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 0 0 24px 24px;
 
-  &__ {}
+    @include tab {
+      margin: 0 auto 24px;
+          font-size: 15px;
+
+    }
+
+  }
+
+  &__list {
+    margin: 0 0 40px;
+
+    @include tab{
+    padding: 0 18px;
+    }
+  }
+
+  &__list-item {
+    font-size: 18px;
+    margin: 0 0 18px 60px;
+    font-weight: bold;
+    position: relative;
+    width: 460px;
+
+    @include tab {
+      width: 80%;
+      margin: 0 0 18px 50px;
+    }
+
+    &::before {
+      content: url(../img/top/reasons-top-dec.png);
+      position: absolute;
+      top: -22px;
+      left: -93px;
+      transform: scale(0.5);
+
+      @include tab {
+        top: -22px;
+        left: -80px;
+        transform: scale(0.4);
+      }
+    }
+
+    &--bottom {
+      &::before {
+        content: url(../img/top/reasons-bottom-dec.png);
+        position: absolute;
+        top: -7px;
+        left: -85px;
+        transform: scale(0.5);
+
+        @include tab {
+          top: 0px;
+          left: -80px;
+          transform: scale(0.4);
+        }
+      }
+    }
+
+
+
+
+    span {
+      font-size: 12px;
+      display: block;
+    }
+  }
+
+  &__btn {
+    display: block;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  &__table-wrap {
+    max-width: 700px;
+    margin: 0 0 0 -100px;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__table-sp {
+
+    display: none;
+
+    @include tab {
+      display: block;
+      margin: 0 auto 24px;
+      width: 100%;
+    }
+  }
 
   &__ {}
 
