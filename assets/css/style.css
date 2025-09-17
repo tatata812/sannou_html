@@ -1548,7 +1548,7 @@ reasons
 }
 .top-reasons__content {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 0 0 80px;
   align-items: center;
 }

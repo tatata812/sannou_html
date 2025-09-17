@@ -1149,8 +1149,8 @@ reasons
     }
 
     @include tab {
-        width: 35px;
-        height: 160px;
+      width: 35px;
+      height: 160px;
     }
 
     img {
@@ -1167,15 +1167,15 @@ reasons
       width: 90%;
     }
 
-    @include tab{
-    width: 100%;
+    @include tab {
+      width: 100%;
     }
 
   }
 
   &__content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0 0 80px;
     align-items: center;
 
@@ -1194,7 +1194,7 @@ reasons
 
     @include tab {
       margin: 0 auto 16px;
-          max-width: 300px;
+      max-width: 300px;
 
     }
   }
@@ -1212,7 +1212,7 @@ reasons
 
     @include tab {
       margin: 0 auto 24px;
-          font-size: 15px;
+      font-size: 15px;
 
     }
 
@@ -1221,8 +1221,8 @@ reasons
   &__list {
     margin: 0 0 40px;
 
-    @include tab{
-    padding: 0 18px;
+    @include tab {
+      padding: 0 18px;
     }
   }
 
