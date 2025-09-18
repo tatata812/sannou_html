@@ -66,17 +66,27 @@ $(function () {
 
 
   //フェードイン
-  $(window).scroll(function () {
-    const windowHeight = $(window).height(); //ウィンドウの高さ
-    const scroll = $(window).scrollTop(); //スクロール量
+$(function() {
+  function fadeInOnScroll() {
+    $('.fade-in-up, .fade-in-right, .fade-in-zoom').each(function() {
+      var elemPos = $(this).offset().top;   // 要素の位置
+      var scroll = $(window).scrollTop();   // スクロール位置
+      var windowHeight = $(window).height();// 画面の高さ
 
-    $(".fade-in-js").each(function () {
-      const targetPosition = $(this).offset().top; //要素の上からの距離
-      if (scroll > targetPosition - windowHeight + 100) {
-        $(this).addClass("action");
+      if (scroll > elemPos - windowHeight + 100) {
+        $(this).addClass('action');
       }
     });
+  }
+
+  // 初回実行
+  fadeInOnScroll();
+
+  // スクロール時に実行
+  $(window).on('scroll', function() {
+    fadeInOnScroll();
   });
+});
 
 
   $(function () {

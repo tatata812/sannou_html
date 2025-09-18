@@ -179,23 +179,45 @@ header
 メインビジュアル
  ================================= */
 .main-visual {
-  padding: 40px 0;
+  padding: 80px 0 ;
   background: linear-gradient(#fff 25%, #E4FDFC 25%);
+
+  @include tab{
+  padding: 54px 0 0;
+  }
 
   &__content {
     display: flex;
     justify-content: center;
     gap: 60px;
+
+    @include tab {
+      flex-direction: column-reverse;
+      gap: 24px;
+
+    }
   }
 
   &__left {
     flex: 1;
+
+    @include tab {
+      flex: none;
+      width: 100%;
+    }
   }
 
   &__left-inner {
     max-width: 270px;
     margin: 40px 0 40px auto;
 
+    position: relative;
+
+    @include tab {
+      margin: 0 auto;
+          max-width: 270px;
+
+    }
   }
 
   &__text {
@@ -206,28 +228,80 @@ header
     font-weight: 700;
     letter-spacing: 0.3em;
 
+
+    @include pc{
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    padding: 0 12px;
+    }
+
+    @include tab {
+      font-size: 20px;
+      margin: 0 0 24px;
+      text-align: center;
+
+
+    }
+
   }
 
   &__right {
     width: 65%;
+    position: relative;
+
+    @include tab {
+      width: 100%;
+      padding: 0 12px;
+    }
   }
 
   &__video {
     width: 100%;
     border-radius: 30px 0 0 30px;
+
+    @include tab {
+      border-radius: 18px;
+    }
   }
 
-  &__ {}
+    &__dec01 {
+    position: absolute;
+max-width: 51px;
+    top: -60px;
+    left: -44px;
 
-  &__ {}
+    @include tab {
+max-width: 42px;
+        top: -19px;
+        left: -55px;
+    }
+  }
 
-  &__ {}
+    &__dec02 {
+    position: absolute;
+    max-width: 64px;
+    top: -72px;
+    right: 296px;
 
-  &__ {}
+    @include tab {
+max-width: 40px;
+        top: -44px;
+        right: 110px;
+    }
+  }
 
-  &__ {}
+    &__dec03 {
+    position: absolute;
+    max-width: 74px;
+    bottom: 112px;
+    right: -27px;
 
-  &__ {}
+    @include tab {
+        max-width: 42px;
+        bottom: 74px;
+        right: -27px;
+    }
+  }
 }
 
 
@@ -236,21 +310,147 @@ header
  ================================= */
 
 .top-lead {
-  padding: 80px 0;
+  padding: 120px 0;
+  background-image: url(../img/top/lead-bg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
-  &__ {}
+  @include tab{
+  padding: 80px 0 0;
+  }
 
-  &__ {}
+  &__content {
+    display: flex;
+    max-width: 1180px;
+    margin: 0 auto;
+    gap: 50px;
 
-  &__ {}
+    @include pc {
+      gap: 16px;
+      padding: 0 12px;
+    }
 
-  &__ {}
+    @include tab {
+      gap: 0;
+    }
+  }
 
-  &__ {}
+  &__text-wrap {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+  }
 
-  &__ {}
 
-  &__ {}
+
+  &__text-ttl {
+
+    display: flex;
+    justify-content: center;
+    /* 横方向の中央寄せ */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    letter-spacing: 0.2em;
+
+    span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+
+    }
+  }
+
+  &__text {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+
+    p {
+      margin-bottom: 40px;
+      color: #603813;
+      line-height: 2rem;
+      white-space: nowrap;
+    }
+  }
+
+  &__left {}
+
+  &__left-img01 {
+    margin: 32px 0 0;
+  }
+
+  &__left-img02 {
+    max-width: 280px;
+    margin: 50px 0 0 auto;
+    position: relative;
+  }
+
+
+
+  &__right {}
+
+  &__right-img01 {
+    max-width: 400px;
+    position: relative;
+  }
+
+
+  &__right-img02 {
+    margin: 60px 0 0 auto;
+    position: relative;
+  }
+
+  &__dec01 {
+    position: absolute;
+    max-width: 74px;
+    top: -63px;
+    left: -27px;
+
+    @include tab {
+      max-width: 40px;
+      top: -63px;
+      left: -27px;
+    }
+  }
+
+  &__dec02 {
+    position: absolute;
+    max-width: 74px;
+    top: -102px;
+    right: 95px;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__dec03 {
+    position: absolute;
+    max-width: 108px;
+    top: -20px;
+    left: -130px;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__dec04 {
+    position: absolute;
+    max-width: 74px;
+    top: -40px;
+    right: -33px;
+
+    @include tab {
+      max-width: 34px;
+      top: 127px;
+      right: 54px;
+    }
+  }
 
   &__ {}
 
@@ -1568,8 +1768,8 @@ footer
     justify-content: space-between;
 
 
-    @include pc{
-    max-width: 95%;
+    @include pc {
+      max-width: 95%;
     }
 
     @include tab {
@@ -1583,8 +1783,8 @@ footer
   &__text {
     width: 340px;
 
-    @include tab{
-    width: 100%;
+    @include tab {
+      width: 100%;
     }
 
   }
@@ -1615,8 +1815,8 @@ footer
     display: block;
     margin: 0 0 32px;
 
-    @include tab{
-    margin: 0 0 18px;
+    @include tab {
+      margin: 0 0 18px;
     }
   }
 
@@ -1626,7 +1826,7 @@ footer
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.1em;
-    
+
   }
 
   &__map {
@@ -1638,8 +1838,8 @@ footer
     width: 400px;
 
     @include tab {
-    width: 100%;
-    order: 1;
+      width: 100%;
+      order: 1;
     }
   }
 
@@ -1661,8 +1861,8 @@ footer
       width: 40%;
     }
 
-    @include tab{
-    width: 45%;
+    @include tab {
+      width: 45%;
     }
   }
 
@@ -1676,8 +1876,8 @@ footer
   &__link {
     width: 220px;
 
-    @include tab{
-    width: 100%;
+    @include tab {
+      width: 100%;
     }
   }
 
