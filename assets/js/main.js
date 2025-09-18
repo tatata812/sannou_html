@@ -67,38 +67,55 @@ $(function () {
 
   //フェードイン
 $(function() {
-  function fadeInOnScroll() {
-    $('.fade-in-up, .fade-in-right, .fade-in-zoom').each(function() {
-      var elemPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
+  var $els = $('.fade-in-up, .fade-in-right, .fade-in-zoom');
 
-      if (scroll > elemPos - windowHeight + 100 && scroll < elemPos + $(this).outerHeight()) {
-        // 画面に入ったら発火
-        if ($(this).hasClass('fade-in-zoom')) {
-          var el = $(this);
-          if (!el.hasClass('action')) { // 重複防止
-            setTimeout(function(){
-              el.addClass('action');
-            }, 300); // zoomだけ0.3秒遅延
+  // 要素が画面に一部でも映っているかを判定（より確実）
+  function isVisible(elem) {
+    var rect = elem.getBoundingClientRect();
+    var winH = $(window).height();
+    return rect.top < winH && rect.bottom > 0;
+  }
+
+  function check() {
+    $els.each(function() {
+      var $el = $(this);
+      var visible = isVisible(this);
+
+      if (visible) {
+        // 画面内に入った時の処理
+        if ($el.hasClass('fade-in-zoom')) {
+          // zoomは遅延して追加。重複タイマーを作らない。
+          if (!$el.data('fadeTimer') && !$el.hasClass('action')) {
+            var timer = setTimeout(function() {
+              $el.addClass('action');
+              $el.removeData('fadeTimer'); // タイマー完了後はデータを消す
+            }, 300); // 遅延時間（ms）
+            $el.data('fadeTimer', timer);
           }
         } else {
-          $(this).addClass('action');
+          // up / right は一度だけ発火（再発火させたくない）
+          if (!$el.hasClass('action')) $el.addClass('action');
         }
       } else {
-        // 画面外に出たらリセット
-        $(this).removeClass('action');
+        // 画面外になった時の処理
+        if ($el.hasClass('fade-in-zoom')) {
+          // 保留中のタイマーがあればキャンセル
+          var t = $el.data('fadeTimer');
+          if (t) {
+            clearTimeout(t);
+            $el.removeData('fadeTimer');
+          }
+          // zoomは離脱でクラスを外して再発火可能にする
+          $el.removeClass('action');
+        }
+        // up / right は一度だけ発火のまま（何もしない）
       }
     });
   }
 
-  // 初回実行
-  fadeInOnScroll();
-
-  // スクロール時に実行
-  $(window).on('scroll', function() {
-    fadeInOnScroll();
-  });
+  // 初回とスクロール・リサイズ時にチェック
+  $(window).on('scroll resize load', check);
+  check();
 });
 
 

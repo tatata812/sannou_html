@@ -179,11 +179,11 @@ header
 メインビジュアル
  ================================= */
 .main-visual {
-  padding: 80px 0 ;
+  padding: 80px 0;
   background: linear-gradient(#fff 25%, #E4FDFC 25%);
 
-  @include tab{
-  padding: 54px 0 0;
+  @include tab {
+    padding: 54px 0 0;
   }
 
   &__content {
@@ -215,7 +215,7 @@ header
 
     @include tab {
       margin: 0 auto;
-          max-width: 270px;
+      max-width: 270px;
 
     }
   }
@@ -229,10 +229,10 @@ header
     letter-spacing: 0.3em;
 
 
-    @include pc{
-    font-size: 24px;
-    letter-spacing: 0.2em;
-    padding: 0 12px;
+    @include pc {
+      font-size: 24px;
+      letter-spacing: 0.2em;
+      padding: 0 12px;
     }
 
     @include tab {
@@ -264,42 +264,42 @@ header
     }
   }
 
-    &__dec01 {
+  &__dec01 {
     position: absolute;
-max-width: 51px;
+    max-width: 51px;
     top: -60px;
     left: -44px;
 
     @include tab {
-max-width: 42px;
-        top: -19px;
-        left: -55px;
+      max-width: 42px;
+      top: -19px;
+      left: -55px;
     }
   }
 
-    &__dec02 {
+  &__dec02 {
     position: absolute;
     max-width: 64px;
     top: -72px;
     right: 296px;
 
     @include tab {
-max-width: 40px;
-        top: -44px;
-        right: 110px;
+      max-width: 40px;
+      top: -44px;
+      right: 110px;
     }
   }
 
-    &__dec03 {
+  &__dec03 {
     position: absolute;
     max-width: 74px;
     bottom: 112px;
     right: -27px;
 
     @include tab {
-        max-width: 42px;
-        bottom: 74px;
-        right: -27px;
+      max-width: 42px;
+      bottom: 74px;
+      right: -27px;
     }
   }
 }
@@ -317,8 +317,8 @@ max-width: 40px;
   background-repeat: no-repeat;
   overflow: hidden;
 
-  @include tab{
-  padding: 80px 0 0;
+  @include tab {
+    padding: 80px 0 0;
   }
 
   &__content {
@@ -424,7 +424,9 @@ max-width: 40px;
     right: 95px;
 
     @include tab {
-      display: none;
+      width: 54px;
+      top: 640px;
+      right: 47px;
     }
   }
 
@@ -435,7 +437,9 @@ max-width: 40px;
     left: -130px;
 
     @include tab {
-      display: none;
+      max-width: 55px;
+      top: 270px;
+      left: 5px;
     }
   }
 
@@ -446,7 +450,7 @@ max-width: 40px;
     right: -33px;
 
     @include tab {
-      max-width: 34px;
+      width: 43px;
       top: 127px;
       right: 54px;
     }
@@ -497,7 +501,7 @@ max-width: 40px;
 
     @include pc {
       text-align: center;
-      margin: 0 auto 24px;
+      margin: 0 auto 0px;
       font-size: 22px;
 
     }
@@ -510,6 +514,7 @@ max-width: 40px;
     display: flex;
     justify-content: center;
     margin-right: -90px;
+    position: relative;
 
 
 
@@ -566,8 +571,8 @@ max-width: 40px;
       transform: scale(0.4);
 
       @include sp {
-        top: -126px;
-        left: -47px;
+        top: -128px;
+        left: -73px;
       }
     }
 
@@ -594,7 +599,20 @@ max-width: 40px;
 
   }
 
+  &__dec01 {
+    position: absolute;
+max-width: 83px;
+    top: -155px;
+    left: 51%;
+    transform: translateX(-50%);
 
+    @include tab {
+        max-width: 61px;
+        top: -5px;
+        left: 88%;
+        transform: translateX(-50%);
+    }
+  }
 }
 
 
@@ -613,16 +631,17 @@ philosophy
     max-width: 1200px;
     margin: 0 auto 80px;
     padding: 0 20px;
-
+    
     @include tab {
       margin: 0 auto 24px;
     }
   }
-
+  
   &__ttl {
     max-width: 520px;
     margin: 0 0 40px auto;
-
+    position: relative;
+    
     @include tab {
       margin: 0 auto 24px;
     }
@@ -719,6 +738,18 @@ philosophy
     }
   }
 
+  &__dec01 {
+    position: absolute;
+    max-width: 82px;
+    top: -30px;
+    left: -126px;
+
+    @include tab {
+width: 56px;
+        top: -89px;
+        left: 33px;
+    }
+  }
 
 
 
@@ -905,6 +936,7 @@ top-about
 
   &__text-wrap {
     width: 300px;
+    position: relative;
   }
 
   &__text-ttl {
