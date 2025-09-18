@@ -1546,6 +1546,7 @@ footer
   position: relative;
   background-color: #69e0dc;
   padding: 70px 18px;
+  overflow: hidden;
 
 
   &__bg {
@@ -1559,7 +1560,8 @@ footer
   &__content {
     display: flex;
     position: relative;
-    max-width: 85%;
+    width: 85%;
+    max-width: 1280px;
     margin: 0 auto;
     align-items: flex-end;
     gap: 40px;
