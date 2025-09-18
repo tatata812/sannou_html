@@ -1421,7 +1421,7 @@ top-about
   background-image: url(../img/top/about-bg.png);
   background-position: center;
   background-size: contain;
-  padding: 60px 0 120px;
+  padding: 60px 0 46px;
   background-repeat: no-repeat;
 }
 @media (max-width: 820px) {
@@ -1503,6 +1503,21 @@ top-about
     transform: rotate(-90deg);
   }
 }
+.top-about__dec01 {
+  position: absolute;
+  max-width: 74px;
+  bottom: -36px;
+  left: 112px;
+}
+@media (max-width: 820px) {
+  .top-about__dec01 {
+    max-width: 40px;
+    max-width: 54px;
+    bottom: -5px;
+    left: auto;
+    right: 1px;
+  }
+}
 /* =================================
 保育の特色
  ================================= */
@@ -1521,10 +1536,10 @@ top-about
 }
 .top-how__ttl {
   text-align: center;
-  padding: 80px 0;
+  padding: 180px 0 80px;
   font-size: 28px;
   color: #333;
-  background-image: url(../img/top/how-ttl-bg.png);
+  background-image: url(../img/top/how-ttl-bg02.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1532,6 +1547,8 @@ top-about
 @media (max-width: 820px) {
   .top-how__ttl {
     font-size: 20px;
+    padding: 60px 0 14px;
+    margin: 0 0 24px;
   }
 }
 .top-how__content {
@@ -1548,6 +1565,7 @@ top-about
   display: flex;
   gap: 60px;
   padding: 0 18px;
+  position: relative;
 }
 @media (max-width: 820px) {
   .top-how__item-wrap {
@@ -1646,6 +1664,17 @@ top-about
 .top-how__item-text {
   padding: 0 2px;
 }
+.top-how__dec01 {
+  position: absolute;
+  max-width: 60px;
+  top: -38px;
+  left: -109px;
+}
+@media (max-width: 820px) {
+  .top-how__dec01 {
+    display: none;
+  }
+}
 /* =================================
 プラグラム
  ================================= */
@@ -1699,6 +1728,7 @@ top-about
   background-size: cover;
   padding: 60px 0 60px 0;
   background-repeat: no-repeat;
+  margin: 24px 0 0;
 }
 @media (max-width: 820px) {
   .top-program__flow-ttl-wrap {

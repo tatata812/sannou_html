@@ -894,7 +894,7 @@ top-about
   background-image: url(../img/top/about-bg.png);
   background-position: center;
   background-size: contain;
-  padding: 60px 0 120px;
+  padding: 60px 0 46px;
   background-repeat: no-repeat;
 
   @include tab {
@@ -985,7 +985,21 @@ top-about
       }
     }
 
+  }
 
+    &__dec01 {
+    position: absolute;
+    max-width: 74px;
+    bottom: -36px;
+    left: 112px;
+
+    @include tab {
+      max-width: 40px;
+max-width: 54px;
+        bottom: -5px;
+        left: auto;
+        right: 1px;
+    }
   }
 
   &__ {}
@@ -1032,16 +1046,19 @@ top-about
 
   &__ttl {
     text-align: center;
-    padding: 80px 0;
+    padding: 180px 0 80px;
     font-size: 28px;
     color: #333;
-    background-image: url(../img/top/how-ttl-bg.png);
+    background-image: url(../img/top/how-ttl-bg02.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 
     @include tab {
       font-size: 20px;
+          padding: 60px 0 14px;
+          margin: 0 0 24px;
+
     }
   }
 
@@ -1060,6 +1077,7 @@ top-about
     display: flex;
     gap: 60px;
     padding: 0 18px;
+    position: relative;
 
     @include tab {
       gap: 40px;
@@ -1175,6 +1193,17 @@ top-about
     padding: 0 2px;
   }
 
+
+    &__dec01 {
+    position: absolute;
+    max-width: 60px;
+    top: -38px;
+    left: -109px;
+
+    @include tab {
+display: none;
+    }
+  }
   &__ {}
 
   &__ {}
@@ -1252,6 +1281,7 @@ top-about
     background-size: cover;
     padding: 60px 0 60px 0;
     background-repeat: no-repeat;
+    margin: 24px 0 0;
 
     @include tab {
       margin: -60px 0 0 0;
