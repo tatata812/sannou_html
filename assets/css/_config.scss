@@ -166,6 +166,9 @@ dt {
 
   &.subpage {
   margin: 150px 0 0;
+    @include pc {
+    margin: 50px 0 0 0;
+  }
   }
 
   @include pc {

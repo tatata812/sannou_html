@@ -135,6 +135,11 @@ dt {
   margin: 150px 0 0;
 }
 @media (max-width: 1120px) {
+  .main.subpage {
+    margin: 50px 0 0 0;
+  }
+}
+@media (max-width: 1120px) {
   .main {
     margin: 50px 0 0 0;
   }
