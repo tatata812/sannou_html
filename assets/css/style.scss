@@ -1230,6 +1230,7 @@ top-about
 
 .top-program {
   padding: 0 0 80px;
+  overflow: hidden;
 
   @include tab {
     padding: 0 0 40px;
@@ -1648,7 +1649,7 @@ reasons
     }
   }
 
-    &__dec02 {
+  &__dec02 {
     width: 80px;
     position: absolute;
     bottom: -62px;
@@ -1707,6 +1708,7 @@ reasons
 
   &__ttl {
     width: 460px;
+    position: relative;
 
     @include tab {
       max-width: 400px;
@@ -1745,6 +1747,7 @@ reasons
     font-weight: bold;
     color: #333;
     width: 200px;
+    position: relative;
 
 
   }
@@ -1752,6 +1755,7 @@ reasons
   &__dd {
     flex: 1;
     color: #333;
+    position: relative;
 
     @include tab {
       padding: 0 0 0 12px;
@@ -1862,23 +1866,74 @@ reasons
     }
   }
 
-  &__ {}
+  &__dec01 {
+    width: 80px;
+    position: absolute;
+    top: -31px;
+    left: -94px;
 
-  &__ {}
 
-  &__ {}
+    @include tab {
+      width: 40px;
+      top: 35%;
 
-  &__ {}
+      right: -131px;
+      left: auto;
+      transform: translate(0, 0);
 
-  &__ {}
+    }
+  }
 
-  &__ {}
+  &__dec02 {
+    width: 108px;
+    position: absolute;
+    bottom: -291px;
+    left: -45px;
 
-  &__ {}
+    @include tab {
+      width: 40px;
+      top: 35%;
 
-  &__ {}
+      right: -131px;
+      left: auto;
+      transform: translate(0, 0);
 
-  &__ {}
+    }
+  }
+
+  &__dec03 {
+    width: 50px;
+    position: absolute;
+    top: -76px;
+    right: 30px;
+
+    @include tab {
+      width: 40px;
+      top: 35%;
+
+      right: -131px;
+      left: auto;
+      transform: translate(0, 0);
+
+    }
+  }
+
+  &__dec04{
+    width: 80px;
+    position: absolute;
+    bottom: -291px;
+    left: -45px;
+
+    @include tab {
+      width: 40px;
+      top: 35%;
+
+      right: -131px;
+      left: auto;
+      transform: translate(0, 0);
+
+    }
+  }
 
   &__ {}
 
@@ -1894,7 +1949,6 @@ footer
   position: relative;
   background-color: #69e0dc;
   padding: 70px 18px;
-  overflow: hidden;
 
 
   &__bg {
@@ -1984,6 +2038,7 @@ footer
 
   &__nav-wrap {
     width: 400px;
+    position: relative;
 
     @include tab {
       width: 100%;
@@ -2033,6 +2088,24 @@ footer
     display: block;
     margin: 0 0 18px;
 
+  }
+
+    &__dec01 {
+    width: 80px;
+    position: absolute;
+    top: -116px;
+    right: 0;
+
+
+    @include tab {
+      width: 40px;
+      top: 35%;
+
+      right: -131px;
+      left: auto;
+      transform: translate(0, 0);
+
+    }
   }
 
 
