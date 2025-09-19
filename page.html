@@ -7,29 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
-  <title>ページ</title>
-  <meta name="description" content="<?php echo $des; ?>">
+  <title>山王保育園 固定ページ</title>
   <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
   <meta name="robots" content="none">
-  <meta property="og:type" content="website">
-  <meta property="og:title"
-    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
-  <meta property="og:description" content="<?php echo $des; ?>">
-  <meta property="og:site_name"
-    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
-  <meta property="og:locale" content="ja_JP">
-  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title"
-    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
-  <meta name="twitter:description" content="<?php echo $des; ?>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
   <link rel="stylesheet" href="assets/css/style.css?20230220">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -38,22 +19,21 @@
 <body class="wrap">
   <div class="black-bg"></div>
   <header class="header">
-    <div class="header__inner">
-      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
-            src="assets/img/top/logo.png" alt="テンプレート"></a>
+    <div class="header__inner header__inner--page">
+      <h1 class="header__ttl-wrap header__item header__ttl-wrap--page"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt="山王保育園"></a>
       </h1>
       <nav class="header__menu-wrap header__item">
         <div class="header__menu-inner">
-          <a href="news.html" class="header__menu">お知らせ</a>
-          <a href="company.html" class="header__menu">会社概要</a>
-          <a href="about.html" class="header__menu">事業案内</a>
-          <a href="services.html" class="header__menu">サービス</a>
+          <a href="" class="header__menu">理念</a>
+          <a href="" class="header__menu">ABOUT</a>
+          <a href="" class="header__menu">施設概要</a>
+          <a href="" class="header__menu">リクルート</a>
+          <a href="" class="header__menu">お問い合わせ</a>
+          <a href="" class="header__menu">リンク集</a>
         </div>
       </nav>
-      <div class="header__right-menu-wrap">
-        <a href="" class="header__right-menu-tel"><i class="fa-solid fa-phone"></i>012-345-6789</a>
-        <a href="contact.html" class="header__right-menu-contact">お問い合わせ</a>
-      </div>
+      <a href="tel:0465-34-0380" class="header__tel"><img src="assets/img/subpage/subpage-tel.png" alt=""></a>
       <div class="header__btn-wrap header__item open-btn-js" id="js-hamburger-menu">
         <img src="assets/img/top/hun-btn.png" alt="">
       </div>
@@ -64,30 +44,93 @@
           <img src="assets/img/top/hun-btn-batsu.png" alt="閉じる">
         </div>
         <div class="header-sp__menu">
-          <a href="news.html" class="header-sp__menu-item">お知らせ</a>
-          <a href="company.html" class="header-sp__menu-item">会社概要</a>
-          <a href="about.html" class="header-sp__menu-item">事業案内</a>
-          <a href="services.html" class="header-sp__menu-item">サービス</a>
-          <a href="contact.html" class="header-sp__menu-item">お問い合わせ</a>
+          <a href="" class="header-sp__menu-item">理念</a>
+          <a href="" class="header-sp__menu-item">ABOUT</a>
+          <a href="" class="header-sp__menu-item">施設概要</a>
+          <a href="" class="header-sp__menu-item">リクルート</a>
+          <a href="" class="header-sp__menu-item">お問い合わせ</a>
+          <a href="" class="header-sp__menu-item">リンク集</a>
         </div>
       </div>
     </div>
   </header>
 
 
+  <div class="main subpage">
 
-  <div class="main page-news subpage">
-    <div class="breadcrumbs-wrap">
-      <div class="breadcrumbs-wrap__content">HOME ／ ○○○○ ／ ○○○○</div>
-    </div>
-    <div class="subpage__ttl-wrap">
-      <div class="subpage__ttl-inner">
-            <h1 class="subpage__ttl fade-in-onload">NEWS<span>お知らせ</span></h1>
+    <section class="subpage__top">
+      <div class="subpage__main-img">
+        <img src="assets/img/top/philosophy-main.jpg" alt="">
+        <h1 class="subpage__main-lead">タイトルが入ります</h1>
       </div>
-    </div>
-    <div class="subpage__main">
-     
-    </div>
+      <div class="subpage__line">
+        <img src="assets/img/top/philosophy-line.png" alt="">
+      </div>
+    </section>
+
+    <section class="subpage__content">
+      <div class="subpage__dec01">
+        <img src="assets/img/subpage/subpage-dec01.png" class="fade-in-zoom fade-in-zoom-updown">
+      </div>
+      <div class="subpage__dec02">
+        <img src="assets/img/subpage/subpage-dec02.png" class="fade-in-zoom fade-in-zoom-swing">
+      </div>
+      <div class="subpage__dec03">
+        <img src="assets/img/subpage/subpage-dec03.png" class="fade-in-zoom fade-in-zoom-swing">
+      </div>
+      <div class="subpage__dec04">
+        <img src="assets/img/subpage/subpage-dec04.png" class="fade-in-zoom fade-in-zoom-swing">
+      </div>
+      <div class="subpage__dec05">
+        <img src="assets/img/subpage/subpage-dec05.png" class="fade-in-zoom fade-in-zoom-swing">
+      </div>
+      <div class="subpage__dec06">
+        <img src="assets/img/subpage/subpage-dec06.png" class="fade-in-zoom fade-in-zoom-swing">
+      </div>
+
+      <div class="breadcrumbs-wrap">
+        <div class="breadcrumbs-wrap__content">
+          TOP / 固定ページ
+        </div>
+      </div>
+      <div class="subpage__content-inner">
+        <div class="subpage__main page-style">
+          <p>文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
+          <h2>H2タイトルタイトル</h2>
+          <h3>H3タイトルタイトル</h3>
+          <p>文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
+          <p>
+            文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。
+          </p>
+          <p>文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
+          <p>文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。</p>
+
+          <ol>
+            <li>リストリストリストリストリストリストリストリスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+          </ol>
+          <ul>
+            <li>リスト</li>
+            <li>リスト</li>
+            <li>リスト</li>
+          </ul>
+                    <p>
+            文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。
+          </p>
+                    <p>
+            文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。文章が文章が入ります。文章が入ります。文章が入ります。入ります。文章が入ります。文章が入ります。
+          </p>
+        </div>
+        <div class="subpage__btn-wrap fade-in-zoom fade-in-zoom-bounce">
+          <a href="" class="subpage__btn"><img src="assets/img/subpage/subpage-btn01.png" alt="園見学を予約"></a>
+          <a href="" class="subpage__btn"><img src="assets/img/subpage/subpage-btn02.png" alt="保育士募集求人"></a>
+
+        </div>
+
+      </div>
+
+    </section>
 
 
 
@@ -95,50 +138,42 @@
   <!--main end-->
 
   <footer class="footer">
-    <div class="footer__top">
-      <div class="footer__top-inner">
-        <div class="footer__top-left">
-          <a href="index.html" class="footer__ttl"><img src="assets/img/top/logo.png" alt="テンプレート"></a>
-          <p class="footer__text">
-            〒012-3456<br>
-            ○○県○○市○○○○○○1丁目1番1号<br>
-            ○○○○○○○○○○ビル
-          </p>
-          <p class="footer__text">
-            営業時間 / 9:00～18:00<br>
-            定休日 / 水曜日
-          </p>
-          <a href="" class="footer__tel"><i class="fa-solid fa-phone"></i>012-888-4444</a>
-        </div>
-        <div class="footer__top-right">
-          <nav class="footer__nav-wrap">
-            <div class="footer__nav-left">
-              <a href="news.html" class="footer__nav">お知らせ</a>
-              <a href="company.html" class="footer__nav">会社概要</a>
-              <a href="about.html" class="footer__nav">事業案内</a>
-              <a href="services.html" class="footer__nav">サービス</a>
-            </div>
-            <div class="footer__nav-right">
-              <a href="userguide.html" class="footer__nav">このサイトについて</a>
-              <a href="privacy.html" class="footer__nav">個人情報保護方針</a>
-            </div>
-          </nav>
-          <a href="" class="footer__contact">お問い合わせ</a>
-          <div class="footer__sns-wrap">
-            <a href="" class="footer__sns"><img src="assets/img/top/x.png" alt=""></a>
-            <a href="" class="footer__sns"><img src="assets/img/top/line.png" alt=""></a>
-            <a href="" class="footer__sns"><img src="assets/img/top/fb.png" alt=""></a>
-            <a href="" class="footer__sns"><img src="assets/img/top/youtube.png" alt=""></a>
-            <a href="" class="footer__sns"><img src="assets/img/top/insta.png" alt=""></a>
+    <div class="footer__bg">
+      <img src="assets/img/subpage/footer-bg-page.png" alt="">
+    </div>
+    <div class="footer__content">
+      <div class="footer__text">
+        <a href="#" class="footer__logo"><img src="assets/img/top/footer-logo.png" alt="山王保育園"></a>
+        <p class="footer__name"><span>社会福祉法人西さがみ福祉会</span>山王保育園</p>
+        <p class="footer__address">〒250-0003 神奈川県小田原市東町1-30-30</p>
+        <a href="tel:0465-34-038" class="footer__tel">tel. 0465-34-0380</a>
+        <a href="" class="footer__map"><img src="assets/img/top/footer-map-link.png" alt=""></a>
 
-          </div>
-        </div>
       </div>
+      <div class="footer__nav-wrap">
+        <nav class="footer__nav">
+          <a href="" class="footer__nav-item">理念</a>
+          <a href="" class="footer__nav-item">ABOUT</a>
+          <a href="" class="footer__nav-item">施設概要</a>
+          <a href="" class="footer__nav-item">リクルート</a>
+          <a href="" class="footer__nav-item">お問い合わせ</a>
+          <a href="" class="footer__nav-item">リンク集</a>
+        </nav>
+        <p class="footer__copy">©2025社会福祉法人西さがみ福祉会,Inc.</p>
+        <div class="footer__dec01">
+          <img src="assets/img/top/footer-dec01.png" class="fade-in-zoom fade-in-zoom-updown">
+        </div>
+
+      </div>
+      <div class="footer__link">
+        <a href="" class="footer__link-item"><img src="assets/img/top/footer-link01.png" alt="西さがみ福祉会"></a>
+        <a href="" class="footer__link-item"><img src="assets/img/top/footer-link02.png" alt="上府中保育線"></a>
+        <a href="" class="footer__link-item"><img src="assets/img/top/footer-link03.png" alt="松田さくら保育園"></a>
+
+      </div>
+
     </div>
-    <div class="footer__bottom">
-      &copy;テンプレート
-    </div>
-    <a href="#" class="footer__go-to-btn top-to-js"><img src="assets/img/top/go-top-btn.png" alt=""></a>
+
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/js/main.js">
