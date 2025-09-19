@@ -181,6 +181,7 @@ header
 .main-visual {
   padding: 80px 0;
   background: linear-gradient(#fff 25%, #E4FDFC 25%);
+  overflow: hidden;
 
   @include tab {
     padding: 54px 0 0;
@@ -626,6 +627,7 @@ philosophy
  ================================= */
 
 .top-philosophy {
+  overflow: hidden;
 
   &__ttl-wrap {
     max-width: 1200px;
@@ -896,6 +898,7 @@ top-about
   background-size: contain;
   padding: 60px 0 46px;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   @include tab {
     margin: -60px 0 0 0;
@@ -1033,6 +1036,7 @@ top-about
 
 .top-how {
   padding: 0 0 120px;
+  overflow: hidden;
 
   @include tab {
     padding: 0 0 0;
@@ -1442,6 +1446,7 @@ reasons
 .top-reasons {
 
   padding: 0 0 24px;
+  overflow: hidden;
 
   @include tab {
     padding: 0 0 12px;
@@ -1686,6 +1691,7 @@ reasons
 .top-overview {
   padding: 80px 0 12px;
   background-color: #fffadb;
+  overflow: hidden;
 
   @include tab {
     padding: 40px 0 12px;
@@ -1874,12 +1880,7 @@ reasons
 
 
     @include tab {
-      width: 40px;
-      top: 35%;
-
-      right: -131px;
-      left: auto;
-      transform: translate(0, 0);
+display: none;
 
     }
   }
@@ -1890,13 +1891,12 @@ reasons
     bottom: -291px;
     left: -45px;
 
-    @include tab {
-      width: 40px;
-      top: 35%;
-
+    @include sp {
+      width: 100px;
+top: -87px;
       right: -131px;
       left: auto;
-      transform: translate(0, 0);
+
 
     }
   }
@@ -1909,11 +1909,8 @@ reasons
 
     @include tab {
       width: 40px;
-      top: 35%;
-
-      right: -131px;
-      left: auto;
-      transform: translate(0, 0);
+        top: -58px;
+        right: 15px;
 
     }
   }
@@ -1925,12 +1922,10 @@ reasons
     left: -45px;
 
     @include tab {
-      width: 40px;
-      top: 35%;
-
-      right: -131px;
-      left: auto;
-      transform: translate(0, 0);
+          width: 50px;
+    bottom: -620px;
+    left: auto;
+    right: -112px;
 
     }
   }
@@ -1949,6 +1944,7 @@ footer
   position: relative;
   background-color: #69e0dc;
   padding: 70px 18px;
+  overflow: hidden;
 
 
   &__bg {
@@ -2099,11 +2095,8 @@ footer
 
     @include tab {
       width: 40px;
-      top: 35%;
-
-      right: -131px;
-      left: auto;
-      transform: translate(0, 0);
+    top: 0;
+    right: 0;
 
     }
   }
