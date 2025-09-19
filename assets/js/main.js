@@ -68,7 +68,7 @@ $(function () {
   //フェードイン
 $(function() {
   function fadeInOnScroll() {
-    $('.fade-in-up, .fade-in-right, .fade-in-zoom').each(function() {
+    $('.fade-in-up, .fade-in-right, .fade-in-zoom,.fade-in-left').each(function() {
       var elemPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();

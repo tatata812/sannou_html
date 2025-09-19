@@ -601,16 +601,16 @@ header
 
   &__dec01 {
     position: absolute;
-max-width: 83px;
+    max-width: 83px;
     top: -155px;
     left: 51%;
     transform: translateX(-50%);
 
     @include tab {
-        max-width: 61px;
-        top: -5px;
-        left: 88%;
-        transform: translateX(-50%);
+      max-width: 61px;
+      top: -5px;
+      left: 88%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -631,17 +631,17 @@ philosophy
     max-width: 1200px;
     margin: 0 auto 80px;
     padding: 0 20px;
-    
+
     @include tab {
       margin: 0 auto 24px;
     }
   }
-  
+
   &__ttl {
     max-width: 520px;
     margin: 0 0 40px auto;
     position: relative;
-    
+
     @include tab {
       margin: 0 auto 24px;
     }
@@ -745,9 +745,9 @@ philosophy
     left: -126px;
 
     @include tab {
-width: 56px;
-        top: -89px;
-        left: 33px;
+      width: 56px;
+      top: -89px;
+      left: 33px;
     }
   }
 
@@ -987,7 +987,7 @@ top-about
 
   }
 
-    &__dec01 {
+  &__dec01 {
     position: absolute;
     max-width: 74px;
     bottom: -36px;
@@ -995,10 +995,10 @@ top-about
 
     @include tab {
       max-width: 40px;
-max-width: 54px;
-        bottom: -5px;
-        left: auto;
-        right: 1px;
+      max-width: 54px;
+      bottom: -5px;
+      left: auto;
+      right: 1px;
     }
   }
 
@@ -1056,8 +1056,8 @@ max-width: 54px;
 
     @include tab {
       font-size: 20px;
-          padding: 60px 0 14px;
-          margin: 0 0 24px;
+      padding: 60px 0 14px;
+      margin: 0 0 24px;
 
     }
   }
@@ -1194,16 +1194,17 @@ max-width: 54px;
   }
 
 
-    &__dec01 {
+  &__dec01 {
     position: absolute;
     max-width: 60px;
     top: -38px;
     left: -109px;
 
     @include tab {
-display: none;
+      display: none;
     }
   }
+
   &__ {}
 
   &__ {}
@@ -1250,6 +1251,7 @@ display: none;
 
   &__ttl {
     width: 70px;
+    position: relative;
 
     @include tab {
       width: 38px;
@@ -1282,6 +1284,9 @@ display: none;
     padding: 60px 0 60px 0;
     background-repeat: no-repeat;
     margin: 24px 0 0;
+    z-index: -2;
+    position: relative;
+
 
     @include tab {
       margin: -60px 0 0 0;
@@ -1294,6 +1299,8 @@ display: none;
     max-width: 880px;
     margin: 0 auto;
     padding: 0 16px;
+    position: relative;
+    z-index: -1;
   }
 
   &__flow-ttl {
@@ -1310,13 +1317,23 @@ display: none;
     margin: -140px auto 120px;
     padding: 40px;
     z-index: 10;
-    position: relative;
 
     @include tab {
       margin: -120px auto 60px;
       padding: 12px;
-    }
+      overflow-x: auto;
+      /* 横スクロール可能にする */
+      -webkit-overflow-scrolling: touch;
+      /* iOSで慣性スクロール */
 
+      img {
+        display: block;
+        max-width: none;
+        /* ←これがポイント！ 画面幅に制限されない */
+        width: 800px;
+        /* 本来の大きさで表示 */
+      }
+    }
   }
 
   &__schedule {
@@ -1327,6 +1344,25 @@ display: none;
 
     img {
       margin: -10px 0 0;
+    }
+
+    @include tab {
+      overflow-x: auto;
+      /* 横スクロール可能にする */
+      -webkit-overflow-scrolling: touch;
+      /* iOSで慣性スクロール */
+      padding: 12px 8px 0;
+
+
+      img {
+        margin: 0;
+
+        display: block;
+        max-width: none;
+        /* ←これがポイント！ 画面幅に制限されない */
+        width: 800px;
+        /* 本来の大きさで表示 */
+      }
     }
   }
 
@@ -1358,20 +1394,34 @@ display: none;
 
     @include tab {
       padding: 4px 12px 40px;
+      overflow-x: auto;
+      /* 横スクロール可能にする */
+      -webkit-overflow-scrolling: touch;
+      /* iOSで慣性スクロール */
 
       img {
         margin: -12px 0 0;
+        margin: 0;
+
+        display: block;
+        max-width: none;
+        /* ←これがポイント！ 画面幅に制限されない */
+        width: 800px;
+        /* 本来の大きさで表示 */
       }
     }
   }
 
-  &__ {}
+  &__dec01 {
+    position: absolute;
+    max-width: 114px;
+    top: 45px;
+    right: 82px;
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
+    @include tab {
+      display: none;
+    }
+  }
 
   &__ {}
 
@@ -1411,6 +1461,7 @@ reasons
 
   &__ttl {
     width: 70px;
+    position: relative;
 
     @include pc {
       width: 50px;
@@ -1560,6 +1611,8 @@ reasons
   &__table-wrap {
     max-width: 700px;
     margin: 0 0 0 -100px;
+    position: relative;
+    z-index: -1;
 
     @include tab {
       display: none;
@@ -1577,7 +1630,40 @@ reasons
     }
   }
 
-  &__ {}
+  &__dec01 {
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tab {
+      width: 40px;
+      top: 35%;
+
+      right: -131px;
+      left: auto;
+      transform: translate(0, 0);
+
+    }
+  }
+
+    &__dec02 {
+    width: 80px;
+    position: absolute;
+    bottom: -62px;
+    right: 43px;
+
+    @include tab {
+      width: 40px;
+      top: 35%;
+
+      right: -131px;
+      left: auto;
+      transform: translate(0, 0);
+
+    }
+  }
 
   &__ {}
 
