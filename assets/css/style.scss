@@ -627,7 +627,6 @@ philosophy
  ================================= */
 
 .top-philosophy {
-  overflow: hidden;
 
   &__ttl-wrap {
     max-width: 1200px;
@@ -1356,7 +1355,7 @@ top-about
       /* 横スクロール可能にする */
       -webkit-overflow-scrolling: touch;
       /* iOSで慣性スクロール */
-      padding: 12px 8px 0;
+      padding: 12px 8px 24px;
 
 
       img {
@@ -1446,7 +1445,7 @@ reasons
 .top-reasons {
 
   padding: 0 0 24px;
-  overflow: hidden;
+ 
 
   @include tab {
     padding: 0 0 12px;
@@ -1503,6 +1502,7 @@ reasons
     justify-content: center;
     margin: 0 0 80px;
     align-items: center;
+    overflow: hidden;
 
     @include tab {
       flex-direction: column;
@@ -1562,7 +1562,7 @@ reasons
     margin: 0 0 18px 60px;
     font-weight: bold;
     position: relative;
-    width: 460px;
+    width: 470px;
 
     @include tab {
       width: 80%;
@@ -1615,7 +1615,7 @@ reasons
   }
 
   &__table-wrap {
-    max-width: 700px;
+    max-width: 680px;
     margin: 0 0 0 -100px;
     position: relative;
     z-index: -1;
@@ -1944,14 +1944,18 @@ footer
   position: relative;
   background-color: #69e0dc;
   padding: 70px 18px;
-  overflow: hidden;
+
+  @include tab{
+    padding: 80px 18px 40px;
+  }
+
 
 
   &__bg {
     position: absolute;
     top: -3px;
     left: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 0;
   }
 
@@ -2089,7 +2093,7 @@ footer
     &__dec01 {
     width: 80px;
     position: absolute;
-    top: -116px;
+    top: -150px;
     right: 0;
 
 
